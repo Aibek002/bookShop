@@ -44,6 +44,7 @@
         },
         {
             "name": "bower-asset/jquery",
+<<<<<<< HEAD
             "version": "3.6.4",
             "source": {
                 "type": "git",
@@ -54,6 +55,18 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/jquery/jquery-dist/zipball/91ef2d8836342875f2519b5815197ea0f23613cf",
                 "reference": "91ef2d8836342875f2519b5815197ea0f23613cf"
+=======
+            "version": "3.7.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jquery/jquery-dist.git",
+                "reference": "fde1f76e2799dd877c176abde0ec836553246991"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jquery/jquery-dist/zipball/fde1f76e2799dd877c176abde0ec836553246991",
+                "reference": "fde1f76e2799dd877c176abde0ec836553246991"
+>>>>>>> 01b1df5 (	new file:   .bowerrc)
             },
             "type": "bower-asset",
             "license": [
@@ -3665,6 +3678,7 @@
         },
         {
             "name": "sebastian/comparator",
+<<<<<<< HEAD
             "version": "6.0.1",
             "source": {
                 "type": "git",
@@ -3675,6 +3689,18 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/sebastianbergmann/comparator/zipball/131942b86d3587291067a94f295498ab6ac79c20",
                 "reference": "131942b86d3587291067a94f295498ab6ac79c20",
+=======
+            "version": "6.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sebastianbergmann/comparator.git",
+                "reference": "450d8f237bd611c45b5acf0733ce43e6bb280f81"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sebastianbergmann/comparator/zipball/450d8f237bd611c45b5acf0733ce43e6bb280f81",
+                "reference": "450d8f237bd611c45b5acf0733ce43e6bb280f81",
+>>>>>>> 01b1df5 (	new file:   .bowerrc)
                 "shasum": ""
             },
             "require": {
@@ -3730,7 +3756,11 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/comparator/issues",
                 "security": "https://github.com/sebastianbergmann/comparator/security/policy",
+<<<<<<< HEAD
                 "source": "https://github.com/sebastianbergmann/comparator/tree/6.0.1"
+=======
+                "source": "https://github.com/sebastianbergmann/comparator/tree/6.0.2"
+>>>>>>> 01b1df5 (	new file:   .bowerrc)
             },
             "funding": [
                 {
@@ -3738,7 +3768,11 @@
                     "type": "github"
                 }
             ],
+<<<<<<< HEAD
             "time": "2024-07-03T04:48:07+00:00"
+=======
+            "time": "2024-08-12T06:07:25+00:00"
+>>>>>>> 01b1df5 (	new file:   .bowerrc)
         },
         {
             "name": "sebastian/complexity",

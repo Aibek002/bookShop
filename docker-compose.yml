@@ -4,7 +4,11 @@ services:
     image: nginx
     volumes:
       - ./nginx/default.conf:/etc/nginx/conf.d/default.conf  # Mounting default.conf here
+<<<<<<< HEAD
  
+=======
+      - ./:/var/www/html  # Application files
+>>>>>>> 01b1df5 (	new file:   .bowerrc)
     ports:
       - "80:80"
     depends_on:
@@ -20,8 +24,13 @@ services:
 
   db:
     image: mysql:latest
+<<<<<<< HEAD
     container_name: db
     environment:
+=======
+    environment:
+      MYSQL_ROOT_PASSWORD: yii2basic
+>>>>>>> 01b1df5 (	new file:   .bowerrc)
       MYSQL_DATABASE: yii2basic
       MYSQL_USER: yii2basic
       MYSQL_PASSWORD: yii2basic
@@ -34,7 +43,11 @@ services:
     image: phpmyadmin/phpmyadmin
     environment:
       PMA_HOST: db
+<<<<<<< HEAD
       MYSQL_PASSWORD: yii2basic
+=======
+      MYSQL_ROOT_PASSWORD: yii2basic
+>>>>>>> 01b1df5 (	new file:   .bowerrc)
     ports:
       - "8080:80"
     depends_on:
