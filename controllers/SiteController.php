@@ -59,9 +59,29 @@ class SiteController extends Controller
      *
      * @return string
      */
-    public function actionIndex()
+    public function actionIndex($title="hello")
     {
-        return $this->render('index');
+        $url = 'https://openlibrary.org/search.json?title=' . urlencode($title);
+        $response = file_get_contents($url);
+        $data = Json::decode($response, true);
+
+        $books = [];
+        if (isset($data['docs'])) {
+            foreach ($data['docs'] as $item) {
+                $books[] = [
+                    'title' => $item['title'],
+                    'language' => $item['language'],
+                    'author' => isset($item['author_name']) ? implode(', ', $item['author_name']) : 'Unknown',
+                    'isbn' => isset($item['isbn'][0]) ? $item['isbn'][0] : 'N/A',
+                    'publication_date' => isset($item['publish_date'][0]) ? $item['publish_date'][0] : 'N/A',
+                ];
+            }
+        }
+
+        return $this->render('index', [
+            'books' => $books,
+        ]);
+       
     }
 
     /**

@@ -5,16 +5,14 @@ FROM php:8.3-fpm
 # Install Nginx
 
 RUN apt-get update \
-<<<<<<< HEAD
+
     && docker-php-ext-install mysqli pdo pdo_mysql \
     && docker-php-ext-enable pdo_mysql \
     && apt-get install -y nginx \
 
-=======
-     && docker-php-ext-install mysqli pdo pdo_mysql \
-     && docker-php-ext-enable pdo_mysql \
-     && apt-get install -y nginx
->>>>>>> 01b1df5 (	new file:   .bowerrc)
+
+  
+
 
 
 # Copy Nginx config
