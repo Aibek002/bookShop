@@ -11,7 +11,7 @@ class BookController extends Controller
     public function actionIndex()
     {
 
-        $title=Yii::$app->request->get('title', '');
+        $title=Yii::$app->request->get('title', '') ? Yii::$app->request->get('title') :'/';
         $book = [];
 
 

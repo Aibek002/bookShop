@@ -1,10 +1,14 @@
 <?php use yii\helpers\Html; ?>
 <?php use yii\helpers\Url; ?>
-
-<form action="<?= Url::to(['book/index']) ?>" method="get">
-    <input type="text" name="title" placeholder="Введите заголовок книги..." value="<?= Html::encode(Yii::$app->request->get('title')) ?>">
-    <button type="submit" class="btn btn-primary">Искать</button>
-</form>
+<div class="container-fluid">
+    <form action="<?= Url::to(['book/index']) ?>" method="get">
+        <div class="input-group mb-3">
+            <input class="form-control" type="text" name="title" aria-describedby="button-addon2"
+                placeholder="Введите заголовок книги..." value="<?= Html::encode(Yii::$app->request->get('title')) ?>">
+            <button class="btn btn-outline-secondary" id="button-addon2" type="submit">Искать</button>
+        </div>
+    </form>
+</div>
 <h1>Search Results</h1>
 
 <?php if (!empty($books)): ?>
@@ -15,7 +19,7 @@
                 <div class="col">
                     <div class="book-item">
                         <?php if ($book['cover_url']): ?>
-                            <img src="<?= Html::encode($book['cover_url']) ?>" alt="<?= Html::encode($book['title']) ?>" 
+                            <img src="<?= Html::encode($book['cover_url']) ?>" alt="<?= Html::encode($book['title']) ?>"
                                 class="cover-image"><br>
                         <?php else: ?>
                             <div class="book-cover-alt">
@@ -23,7 +27,7 @@
                             </div>
                         <?php endif; ?>
                     </div>
-                    <p class="title_book">  <strong><?= Html::encode($book['title']) ?></strong></p>
+                    <p class="title_book"> <strong><?= Html::encode($book['title']) ?></strong></p>
                     <!-- <p class="authors_book"> <?= Html::encode($book['author']) ?></p>
                     ISBN: <?= Html::encode($book['isbn']) ?><br>
                    
@@ -35,5 +39,9 @@
         </div>
     </div>
 <?php else: ?>
-    <p>books <?php echo $title?>  found. </p>
+    <?php if ($title === "/"): ?>
+        <p>Please search your book! </p>
+    <?php else: ?>
+        <p>Books <strong style="color: red;"><?php echo $title ?></strong> not found</p>
+    <?php endif; ?>
 <?php endif; ?>

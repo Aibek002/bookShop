@@ -46,7 +46,8 @@
 
 }
 .row{
-    gap:15px
+    gap:15px;
+    margin:auto;
 }
 .col{
     display: flex;
