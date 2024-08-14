@@ -1,8 +1,10 @@
-<?php
-use yii\helpers\Html;
+<?php use yii\helpers\Html; ?>
+<?php use yii\helpers\Url; ?>
 
-?>
-
+<form action="<?= Url::to(['book/index']) ?>" method="get">
+    <input type="text" name="title" placeholder="Введите заголовок книги..." value="<?= Html::encode(Yii::$app->request->get('title')) ?>">
+    <button type="submit" class="btn btn-primary">Искать</button>
+</form>
 <h1>Search Results</h1>
 
 <?php if (!empty($books)): ?>
@@ -33,5 +35,5 @@ use yii\helpers\Html;
         </div>
     </div>
 <?php else: ?>
-    <p>No books found.</p>
+    <p>books <?php echo $title?>  found. </p>
 <?php endif; ?>

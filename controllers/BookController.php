@@ -1,14 +1,20 @@
 <?php
 namespace app\controllers;
 
+use app\models\BookSearch;
 use Yii;
 use yii\web\Controller;
 use yii\helpers\Json;
 
 class BookController extends Controller
 {
-    public function actionIndex($title = "hello")
+    public function actionIndex()
     {
+
+        $title=Yii::$app->request->get('title', '');
+        $book = [];
+
+
         $url = 'https://openlibrary.org/search.json?title=' . urlencode($title);
         $response = @file_get_contents($url);
         if ($response === false) {
@@ -16,7 +22,6 @@ class BookController extends Controller
             return $this->render('index', ['books' => []]);
         }
         $data = Json::decode($response, true);
-        $book = [];
         if (isset($data['docs'])) {
             foreach ($data['docs'] as $item) {
                 $coverId = $item['cover_i'] ?? null;
@@ -32,6 +37,7 @@ class BookController extends Controller
                 ];
             }
         }
-        return $this->render('index', ['books' => $book]);
+    
+        return $this->render('index', ['books' => $book , 'title'=> $title]);
     }
 }
