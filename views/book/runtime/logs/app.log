@@ -1,0 +1,176 @@
+2024-08-15 06:02:57 [172.18.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "book/index". in /var/www/html/vendor/yiisoft/yii2/base/Module.php:561
+Stack trace:
+#0 /var/www/html/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('book/index', Array)
+#1 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/web/index.php(11): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/html/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/web/index.php(11): yii\base\Application->run()
+#2 {main}
+2024-08-15 06:02:57 [172.18.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'pma_lang' => 'ru'
+    'pmaUser-1' => '2HAjVt1dJdRiUIMmK8clQkF0VPN9vyN+Zz9RxoiAD/grJga5WAfSMY0WU98JU+sXsQ=='
+    'PHPSESSID' => '91d15ea11f373f8dd2f3af87047502a0'
+    'lang' => '54fba3765b1e4eec1ef5f03636e4a85585359ae855fc980e84d4563cb4c1a640a:2:{i:0;s:4:\"lang\";i:1;s:5:\"ru-RU\";}'
+    '_csrf' => '545af4f24cd63b2e00b5292dab4750b115c29ffc70bfaccdb3b99b116a59b8f3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"AA3fs05pmJlJZa82iWG4eTnqerGIkbn_\";}'
+    'phpMyAdmin' => '41f40d842bfc49a1414b6368de0aad33'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HOSTNAME' => '5b4b2390a76a'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'HOME' => '/var/www'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_VERSION' => '8.3.9'
+    'GPG_KEYS' => '1198C0117593497A5EC5C199286AF1F9897469DC C28D937575603EB4ABB725861C0779DC5C0A9DE4 AFD8691FDAEDF03BDF6E460563F15A9B715376CA'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.3.9.tar.xz.asc'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.3.9.tar.xz'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c'
+    'PWD' => '/var/www/html'
+    'PHP_SHA256' => 'bf4d7b8ea60a356064f88485278bd6f941a230ec16f0fc401574ce1445ad6c77'
+    'USER' => 'www-data'
+    'HTTP_PRIORITY' => 'u=0, i'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_COOKIE' => 'pma_lang=ru; pmaUser-1=2HAjVt1dJdRiUIMmK8clQkF0VPN9vyN%2BZz9RxoiAD%2FgrJga5WAfSMY0WU98JU%2BsXsQ%3D%3D; PHPSESSID=91d15ea11f373f8dd2f3af87047502a0; lang=54fba3765b1e4eec1ef5f03636e4a85585359ae855fc980e84d4563cb4c1a640a%3A2%3A%7Bi%3A0%3Bs%3A4%3A%22lang%22%3Bi%3A1%3Bs%3A5%3A%22ru-RU%22%3B%7D; _csrf=545af4f24cd63b2e00b5292dab4750b115c29ffc70bfaccdb3b99b116a59b8f3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22AA3fs05pmJlJZa82iWG4eTnqerGIkbn_%22%3B%7D; phpMyAdmin=41f40d842bfc49a1414b6368de0aad33'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://localhost/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/png,image/svg+xml,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:129.0) Gecko/20100101 Firefox/129.0'
+    'HTTP_HOST' => 'localhost'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => '/var/www/html/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.18.0.5'
+    'REMOTE_PORT' => '41668'
+    'REMOTE_ADDR' => '172.18.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.27.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/var/www/html/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/index'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1723701776.8849
+    'REQUEST_TIME' => 1723701776
+    'argv' => []
+    'argc' => 0
+]
+2024-08-15 06:03:09 [172.18.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "book/index". in /var/www/html/vendor/yiisoft/yii2/base/Module.php:561
+Stack trace:
+#0 /var/www/html/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('book/index', Array)
+#1 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/web/index.php(11): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/html/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/web/index.php(11): yii\base\Application->run()
+#2 {main}
+2024-08-15 06:03:08 [172.18.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'pma_lang' => 'ru'
+    'pmaUser-1' => '2HAjVt1dJdRiUIMmK8clQkF0VPN9vyN+Zz9RxoiAD/grJga5WAfSMY0WU98JU+sXsQ=='
+    'PHPSESSID' => '91d15ea11f373f8dd2f3af87047502a0'
+    'lang' => '54fba3765b1e4eec1ef5f03636e4a85585359ae855fc980e84d4563cb4c1a640a:2:{i:0;s:4:\"lang\";i:1;s:5:\"ru-RU\";}'
+    '_csrf' => '545af4f24cd63b2e00b5292dab4750b115c29ffc70bfaccdb3b99b116a59b8f3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"AA3fs05pmJlJZa82iWG4eTnqerGIkbn_\";}'
+    'phpMyAdmin' => '41f40d842bfc49a1414b6368de0aad33'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HOSTNAME' => '5b4b2390a76a'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'HOME' => '/var/www'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_VERSION' => '8.3.9'
+    'GPG_KEYS' => '1198C0117593497A5EC5C199286AF1F9897469DC C28D937575603EB4ABB725861C0779DC5C0A9DE4 AFD8691FDAEDF03BDF6E460563F15A9B715376CA'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.3.9.tar.xz.asc'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.3.9.tar.xz'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c'
+    'PWD' => '/var/www/html'
+    'PHP_SHA256' => 'bf4d7b8ea60a356064f88485278bd6f941a230ec16f0fc401574ce1445ad6c77'
+    'USER' => 'www-data'
+    'HTTP_PRIORITY' => 'u=0, i'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_COOKIE' => 'pma_lang=ru; pmaUser-1=2HAjVt1dJdRiUIMmK8clQkF0VPN9vyN%2BZz9RxoiAD%2FgrJga5WAfSMY0WU98JU%2BsXsQ%3D%3D; PHPSESSID=91d15ea11f373f8dd2f3af87047502a0; lang=54fba3765b1e4eec1ef5f03636e4a85585359ae855fc980e84d4563cb4c1a640a%3A2%3A%7Bi%3A0%3Bs%3A4%3A%22lang%22%3Bi%3A1%3Bs%3A5%3A%22ru-RU%22%3B%7D; _csrf=545af4f24cd63b2e00b5292dab4750b115c29ffc70bfaccdb3b99b116a59b8f3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22AA3fs05pmJlJZa82iWG4eTnqerGIkbn_%22%3B%7D; phpMyAdmin=41f40d842bfc49a1414b6368de0aad33'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://localhost/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/png,image/svg+xml,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:129.0) Gecko/20100101 Firefox/129.0'
+    'HTTP_HOST' => 'localhost'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => '/var/www/html/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.18.0.5'
+    'REMOTE_PORT' => '41684'
+    'REMOTE_ADDR' => '172.18.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.27.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/var/www/html/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/index'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1723701788.6402
+    'REQUEST_TIME' => 1723701788
+    'argv' => []
+    'argc' => 0
+]

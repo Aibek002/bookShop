@@ -14,6 +14,7 @@
     align-items: center;
     justify-content: center;
     border: 1px solid #ddd;
+
     overflow: hidden;
     
     /* Скрывает часть изображения, если оно не помещается */
@@ -22,8 +23,14 @@
 .book-cover-alt {
     text-align: center;
     font-size: 16px;
-    color: #333;
+    width: 150px; 
+    height: 200px;
+    color: #fff;
     box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: grey;
 }
 
 .title_book {

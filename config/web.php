@@ -6,7 +6,8 @@ $db = require __DIR__ . '/db.php';
 $config = [
     'id' => 'basic',
     'name' => 'Web Library',
-    'basePath' => dirname(__DIR__),
+    'basePath' => dirname(__DIR__ ),
+    'homeUrl'=>"/book/index",
     'bootstrap' => ['log'],
     'aliases' => [
         '@bower' => '@vendor/bower-asset',
@@ -14,7 +15,9 @@ $config = [
     ],
     'components' => [
         'openlibapi' => [
-            'class' => ''
+            // C:\Users\AIBEK\Desktop\projects\bookShop\services
+            // C:\Users\AIBEK\Desktop\projects\bookShop\services\OpenLibService.php
+            'class' => 'app\services\OpenLibService'
         ],
         'request' => [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
